@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>JavaScript Demo</title>
+  
+    
+</head>
+<body>
+      <h1>Welcome to javascript Demo</h1>
+      <input type="text" id="v1"  value="">
+      <input type="text" id="v2" value=""><br>
+
+       <input type="submit" value="add" onclick="operatorfun('+')">
+       <input type="submit" value="sub"  onclick="operatorfun('-')">
+       <input type="submit" value="mul"  onclick="operatorfun('*')">
+       <input type="submit" value="div"  onclick="operatorfun('/')">
+   
+      <p id="result">for output</p>
+
+     <script>
+         function operatorfun(a){
+
+              var value1=document.getElementById("v1").value;
+              var value2=document.getElementById("v2").value;
+    
+              value1=Number(value1);
+              value2=Number(value2);
+
+
+              switch(a){
+                  case'+':
+                  document.getElementById("result").innerHTML=value1 + value2;
+                  break;
+                  case'-':
+                  document.getElementById("result").innerHTML=value1 - value2;
+                  break;
+
+                  case'*':
+                  document.getElementById("result").innerHTML=value1 * value2;
+                  break;
+
+                  case'/':
+                  document.getElementById("result").innerHTML=value1 / value2;
+                  break;
+                }
+    
+
+
+
+ 
+                  }  
+
+                  
+    </script>
+
+</body>
+</html>
