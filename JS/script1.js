@@ -15,5 +15,8 @@ function RegisterForm()
         var USERNAME5=document.getElementById("male").value;
         document.getElementById("gen").innerHTML=USERNAME5;
 
+
+
+
 }
     console.log("UNAME");
